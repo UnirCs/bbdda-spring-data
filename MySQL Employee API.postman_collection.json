@@ -54,21 +54,13 @@
 			"response": []
 		},
 		{
-			"name": "New Employee",
-			"request": {
-				"method": "POST",
-				"header": []
-			},
-			"response": []
-		},
-		{
 			"name": "New Department",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"deptNo\":\"d011\",\n    \"deptName\":\"Test\"\n}",
+					"raw": "{\n    \"deptNo\":\"d011\",\n    \"deptName\":\"Testtttttttt\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
