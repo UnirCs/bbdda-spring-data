@@ -23,7 +23,7 @@ public class EmployeeController {
 	 * @return lista de empleados.
 	 */
 	@GetMapping
-	public List<Employee> getEmployees(@RequestParam("lastName") String lastName) {
+	public List<Employee> getEmployees(@RequestParam(value = "lastName", required = false) String lastName) {
 
 		if(StringUtils.hasText(lastName)) {
 			return employeeRepository.findByLastName(lastName);

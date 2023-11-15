@@ -1,5 +1,6 @@
 package com.unir.employees.model.db;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -39,9 +40,11 @@ public class Employee {
 	@Column(name = "hire_date")
 	private Date hireDate;
 
+	@JsonIgnore
 	@OneToMany(mappedBy = "employee")
 	private Set<DeptEmp> deptEmps;
 
+	@JsonIgnore
 	@OneToMany(mappedBy = "employee")
 	private Set<DeptManager> deptManagers;
 }
