@@ -43,11 +43,7 @@ public class DepartmentController {
     @PostMapping("/")
     @Transactional
     public ResponseEntity<?> createDepartment(@RequestBody Department department) {
-        try {
-            return ResponseEntity.ok(createDepartmentTransact(department));
-        } catch (IllegalStateException e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
-        }
+        return ResponseEntity.ok(createDepartmentTransact(department));
     }
 
 
