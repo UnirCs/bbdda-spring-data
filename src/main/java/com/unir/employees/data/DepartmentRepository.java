@@ -15,4 +15,7 @@ public interface DepartmentRepository extends JpaRepository<Department, String> 
     // Método para buscar un departamento por nombre
     Optional<Department> findByDeptName(String deptName);
 
+    // Método para obtener el total de departamentos
+    long count();
+
 }
