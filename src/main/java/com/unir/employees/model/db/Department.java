@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.Set;
 
 @Entity
@@ -15,10 +16,10 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Department {
+public class Department implements Serializable {
 
     @Id
-    @Column(name = "dept_no", length = 4)
+    @Column(name = "dept_no", columnDefinition = "CHAR(4)")
     private String deptNo;
 
     @Column(name = "dept_name", length = 40)

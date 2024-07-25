@@ -10,7 +10,13 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
+  cache:
+    type: redis
+    host: localhost
+    port: 6379
+    redis:
+      time-to-live: 60000
 
 ## Configuracion de Instancia 
 server:

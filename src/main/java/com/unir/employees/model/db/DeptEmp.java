@@ -21,7 +21,7 @@ public class DeptEmp {
 
     @Id
     @ManyToOne
-    @JoinColumn(name = "dept_no")
+    @JoinColumn(name = "dept_no", columnDefinition = "CHAR(4)")
     private Department department;
 
     @Temporal(TemporalType.DATE)
