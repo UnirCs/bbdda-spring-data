@@ -12,10 +12,10 @@ public interface DepartmentRepository extends JpaRepository<Department, String> 
     //Documentacion sobre Derivacion de consultas: https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
     //Documentacion sobre consultas nativas: https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.at-query
 
-    // Método para buscar un departamento por nombre
+    // Metodo para buscar un departamento por nombre
     Optional<Department> findByDeptName(String deptName);
 
-    // Método para obtener el total de departamentos
+    // Metodo para obtener el total de departamentos
     long count();
 
 }

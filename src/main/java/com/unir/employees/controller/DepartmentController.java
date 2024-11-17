@@ -30,11 +30,11 @@ public class DepartmentController {
     /**
      * Crear un nuevo departamento.
      *
-     * Observa que el método createDepartmentTransact está anotado con @Transactional.
-     * Cuando se llama a un método anotado con @Transactional dentro de la misma clase, la anotación no tiene efecto.
+     * Observa que el metodo createDepartmentTransact está anotado con @Transactional.
+     * Cuando se llama a un metodo anotado con @Transactional dentro de la misma clase, la anotación no tiene efecto.
      * No se crea, por tanto, un nuevo contexto de transacción, sino que se reutiliza el contexto de transacción actual.
-     * Dado que el método createDepartmentTransact es llamado desde el método createDepartment, es necesario que
-     * la anotación @Transactional esté presente en el método createDepartment. De hecho, si la retiras, verás un
+     * Dado que el metodo createDepartmentTransact es llamado desde el metodo createDepartment, es necesario que
+     * la anotación @Transactional esté presente en el metodo createDepartment. De hecho, si la retiras, verás un
      * warning en la consola referente a esto.
      *
      * @param department - departamento.
